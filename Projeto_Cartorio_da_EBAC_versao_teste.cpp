@@ -140,7 +140,9 @@ int main()
 			printf("\t 1. Cadastrar - é o seu primeiro contato? \n\n");
 			printf("\t 2. Consultar - Já possui cadastro? \n\n");
 			printf("\t 3. Deletar - Está saindo do curso? \n\n");
-			printf("Opção:"); //fim do menu
+			printf("\t 4. Sair do sistema\n\n");
+			printf("Opção:");
+			 //fim do menu
 			
 			scanf("%d", &opcao); //armazenando a escolha do usuário 
 			
@@ -159,6 +161,11 @@ int main()
 		      case 3:
 		           deleta();
 		           break;
+		           
+		      case 4:
+		      	  printf("Obrigado por utilizar o sistema! ");
+		      	  return 0;
+		      	  break;
 				    
 		      default:
 		           printf("Você digitou opção inválida\n");
